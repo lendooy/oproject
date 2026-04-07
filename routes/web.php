@@ -30,7 +30,7 @@ Route::post('students/add', function(Request $request){
 
     session(['students' => $students]);
 
-    return back()->with('success', 'Étudiant ajouté');
+    return redirect('/students')->with('success', 'Étudiant ajouté');
 });
 
 Route::get('/students/delete/{index}', function ($index) {
@@ -46,4 +46,5 @@ Route::get('/students/delete/{index}', function ($index) {
 
     return back()->with('success', 'Étudiant supprimé');
 });
+
 
