@@ -48,4 +48,5 @@ Route::get('/students/delete/{index}', function ($index) {
     return back()->with('success', 'Étudiant supprimé');
 });
 
+//les routes avenir
 
