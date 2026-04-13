@@ -10,7 +10,7 @@ Route::get('/students', function () {
     return view('students.index',compact('students'));
 });
 
-//ajouter avoir le formulaire
+//ajouter avoir le formulaires
 
 Route::get('students/add',function(){
     
