@@ -38,6 +38,7 @@ Route::get('/students/delete/{index}', function ($index) {
     $students = session('students', []);
 
     unset($students[$index]); // supprimer
+    // ici je vais ajouter
 
     // réorganiser les index (important)
     $students = array_values($students);
